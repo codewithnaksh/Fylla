@@ -33,7 +33,6 @@ body{
 #root{
     padding: 1rem;
     width: 100%;
-    height: 100%;
     border: 2px solid #8b8a87;
 }
 header{
@@ -133,6 +132,48 @@ header a{
 }
 .circular-buttons{
     display: none;
+}
+header .links{
+    display: none;
+}
+/* --------------------------------------------------- */
+#view1{
+    width: 100%;
+    color: #fdfbf5;
+    
+}
+.view1-container{
+    width: 100%;
+}
+.view1-subgroup{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#view1  p{
+    text-transform: uppercase;
+    font-family: font3;
+}
+#view1  h2{
+    font-family: font2;
+    font-size: 3.5rem;
+}
+#view1  .view1-hero-img-container{
+    width: 100%;
+    /* border-radius: 10px; */
+}
+.view1-hero-img-container > img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+#view1 .view1-subgroup:last-child > h2{
+    width: 94%;
+    font-family: font2;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
 }
 
 @media (min-width: 810px) and (max-width: 1199px){
