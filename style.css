@@ -122,9 +122,153 @@ header a{
 }
 .logo-container > .sq-fill{
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #fdfbf5;
-    bottom: 12px;
-    left: 12px;
+    bottom: 13px;
+    left: 13px;
+}
+.lets-talk{
+    display: none;
+}
+.circular-buttons{
+    display: none;
+}
+
+@media (min-width: 810px) and (max-width: 1199px){
+    #root{
+        padding: 2rem;
+    }
+    header{
+        padding: 8px 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #8b8a87;
+    }
+    .left{
+        gap: 1.5rem;
+    }
+    .right{
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+    }
+    .lets-talk{
+        display: initial;
+        padding: 10px 1rem;
+        text-transform: uppercase;
+        background-color: #fdfbf5;
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 2px;
+    }
+    .circular-buttons{
+        display: flex;
+        gap: 1rem;
+        display: initial;
+        border: 1px solid #8b8a87;
+        padding: 0 1rem;
+         border-top: none;
+         border-bottom: none;
+    }
+    .circular-buttons > button{
+        background-color: transparent;
+        border: 1px solid #8b8a87;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        color: #fdfbf5;
+        font-family: font4;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .circular-buttons > button:last-child{
+        margin-right: 0;
+    }
+    .lets-talk-container{
+        border-right: 1px solid #8b8a87;
+        padding-right: 1rem;
+    }
+    .links{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    #root{
+        padding: 2rem;
+    }
+    header{
+        padding: 8px 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #8b8a87;
+    }
+    .left{
+        gap: 1.5rem;
+    }
+    .right{
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+    }
+    .lets-talk{
+        display: initial;
+        padding: 10px 1rem;
+        text-transform: uppercase;
+        background-color: #fdfbf5;
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 2px;
+    }
+    .circular-buttons{
+        display: flex;
+        gap: 1rem;
+        display: initial;
+        border: 1px solid #8b8a87;
+        padding: 0 1rem;
+         border-top: none;
+         border-bottom: none;
+    }
+    .circular-buttons > button{
+        background-color: transparent;
+        border: 1px solid #8b8a87;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        color: #fdfbf5;
+        font-family: font4;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .circular-buttons > button:last-child{
+        margin-right: 0;
+    }
+    .lets-talk-container{
+        /* border-right: 1px solid #8b8a87; */
+        /* padding-right: 1rem; */
+    }
+    .links{
+        margin-right: 3rem;
+    }
+    .links > ul{
+        display: flex;
+        gap: 1rem;
+    }
+    .links > ul > li{
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .links > ul > li > a{
+        font-size: 14px;
+        font-family: font1;
+    }
+    .hamburger{
+        display: none;
+    }
+    .theme-toggle{
+        order: 4;
+    }
 }
