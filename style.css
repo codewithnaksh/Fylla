@@ -38,20 +38,25 @@ body{
 }
 header{
     width: 100%;
-    background-color: darkblue;
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+    font-family: font1;
 }
 .left{
-    background-color: bisque;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .right{
-    /* background-color: aquamarine; */
+    /* border: 1px solid green; */
 }
 .hamburger{
     padding: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: rgb(49, 49, 49);
     display: flex;
     flex-direction: column;
@@ -62,4 +67,41 @@ header{
     width: 100%;
     height: 1px;
     background-color: #fff;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.logo-container{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    /* background-color: pink; */
+}
+.logo-container > .square{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8b8a87;
+}
+.logo-container > .square:first-child{
+    position: absolute;
+}
+.logo-container > .square:nth-child(2){
+    left: 4px;
+    bottom: 4px;
+    position: absolute;
+}
+.logo-container > .square:nth-child(3){
+    left: 8px;
+    bottom: 8px;
+    position: absolute;
+}
+.logo-container > .sq-fill{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #8b8a87;
+    bottom: 12px;
+    left: 12px;
 }
